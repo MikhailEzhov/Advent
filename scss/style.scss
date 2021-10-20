@@ -1,0 +1,288 @@
+@import "_main-style";
+
+// header------------------------------------------------------------------
+.header {
+    margin: 20px 0;
+
+    &__logo {
+        @import "_my-elements-style";
+    }
+
+    &__nav {
+        gap: 36px;
+        @media (max-width: $bpSMfrom576to768) {
+            gap: 0;
+        }
+    }
+
+    &__link {
+        color: $fontColorMain;
+        @import "_my-links-style";
+        &_bold {
+            font-weight: 600;
+        }
+        @media (max-width: $bpSMfrom576to768) {
+            margin: 10px auto;
+        }
+    }
+}
+
+// advent------------------------------------------------------------
+.advent {
+    padding: 82px 0;
+
+    &__info {
+        margin: auto;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 48px;
+        margin-bottom: 16px;
+        @media (max-width: $bpSMfrom576to768) {
+            font-size: 30px;
+        }
+    }
+
+    &__description {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 48px;
+    }
+
+    &__button {
+        font-weight: bold;
+        font-size: 24px;
+        color: #ffffff;
+        padding: 12px 41px;
+        background: #ffb61d;
+        border-radius: 8px;
+        @media (max-width: $bpMDfrom768to992) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__picture {
+        max-width: 100%;
+    }
+}
+
+// appeal------------------------------------------------------
+.appeal {
+    padding: 64px 0;
+
+    &__block {
+        @media (max-width: $bpMDfrom768to992) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__picture {
+        max-width: 100%;
+    }
+
+    &__info {
+        margin: auto;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 8px;
+        @media (max-width: $bpSMfrom576to768) {
+            font-size: 30px;
+        }
+    }
+
+    &__description {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+// experiences------------------------------------------------------
+.experiences {
+    padding: 150px 0;
+
+    &__block {
+        justify-content: center;
+        margin: 14px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 98px;
+        position: relative;
+        @media (max-width: $bpSMfrom576to768) {
+            font-size: 30px;
+        }
+        @media (max-width: 320px) {
+            margin-bottom: 50px;
+        }
+        &::before {
+            content: "";
+            width: 60px;
+            height: 2px;
+            background: #ffb61d;
+            position: absolute;
+            left: 47%;
+            top: 97px;
+            @media (max-width: $bpMDfrom768to992) {
+                left: 46%;
+            }
+            @media (max-width: $bpSMfrom576to768) {
+                left: 44%;
+            }
+            @media (max-width: 320px) {
+                left: 40%;
+            }
+        }
+    }
+}
+
+.experience {
+    display: flex;
+    gap: 24px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 26px;
+        margin-bottom: 4px;
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 25px;
+        width: 87%;
+        @media (max-width: $bpLGfrom992to1200) {
+            width: 100%;
+        }
+        @media (max-width: $bpMDfrom768to992) {
+            padding-bottom: 10px;
+        }
+    }
+}
+// connection------------------------------------------------------
+.connection {
+    padding: 30px 0 68px 0;
+
+    &__info {
+        margin: auto;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 16px;
+        @media (max-width: $bpSMfrom576to768) {
+            font-size: 30px;
+        }
+    }
+
+    &__description {
+        font-size: 20px;
+        line-height: 27px;
+        color: $placeholderColorMain;
+        margin-bottom: 40px;
+    }
+
+    &__form {
+        display: flex;
+        gap: 10px;
+        @media (max-width: $bpMDfrom768to992) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: $bpSMfrom576to768) {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        font-weight: 300;
+        font-size: 20px;
+        color: $placeholderColorMain;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        width: 60%;
+        @media (max-width: $bpSMfrom576to768) {
+            width: 80%;
+        }
+    }
+
+    &__button {
+        font-weight: bold;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 12px 24px;
+        background: #ffb61d;
+        border-radius: 8px;
+        white-space: nowrap;
+        @media (max-width: $bpSMfrom576to768) {
+            width: 80%;
+            height: 51px;
+        }
+    }
+
+    &__picture {
+        max-width: 100%;
+    }
+}
+
+// footer------------------------------------------------------
+.footer {
+    padding: 62px 0;
+
+    &__block {
+        border-bottom: 2px solid #ebeaed;
+        align-items: center;
+        padding-bottom: 25px;
+        margin-bottom: 35px;
+    }
+
+    &__logo {
+        display: inline-block;
+        @import "_my-elements-style";
+        @media (max-width: $bpSMfrom576to768) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: flex-end;
+        gap: 41px;
+        @media (max-width: $bpSMfrom576to768) {
+            justify-content: center;
+        }
+    }
+
+    &__link {
+        color: $fontColorMain;
+        @import "_my-links-style";
+    }
+
+    &__coryright {
+        color: rgba(21, 20, 57, 0.4);
+        @media (max-width: $bpSMfrom576to768) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: flex-end;
+        gap: 35px;
+        @media (max-width: $bpSMfrom576to768) {
+            justify-content: center;
+        }
+    }
+
+    &__social {
+        @import "_my-elements-style";
+    }
+}

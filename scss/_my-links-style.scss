@@ -1,0 +1,17 @@
+& {
+    transition: all 400ms ease 0s;
+}
+&:link { //непосещенная ссылка, обычное состояние
+    //color: #FF0000;
+    text-decoration: none;
+}
+//&:visited { //посещенная ссылка
+    //color: #00FF00;
+//}
+&:hover { //курсор мыши над ссылкой (hover)
+    color: #FFB61D;
+    text-decoration: underline;
+}
+&:active { //активная ссылка - нажатая
+    color: #64FCD9;
+}
